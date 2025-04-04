@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import BuffetTimes from '../components/BuffetTimes';
 import BuffetGallery from '../components/BuffetGallery';
+import MenuSlider from '../components/MenuSlider';
 import Testimonials from '../components/Testimonials';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
@@ -21,6 +22,7 @@ const Index = () => {
         </div>
       </div>
       <BuffetTimes />
+      <MenuSlider />
       <BuffetGallery />
       <Testimonials />
       <ContactSection />
