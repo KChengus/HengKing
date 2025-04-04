@@ -25,9 +25,26 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <Link to="/" className="hover:text-restaurant-gold transition-colors">Hem</Link>
           <Link to="/menu" className="hover:text-restaurant-gold transition-colors">Meny</Link>
-          <Link to="/buffe" className="hover:text-restaurant-gold transition-colors">Buffé</Link>
-          <Link to="/om-oss" className="hover:text-restaurant-gold transition-colors">Om Oss</Link>
-          <Link to="/kontakt" className="hover:text-restaurant-gold transition-colors">Kontakt</Link>
+          <button 
+            onClick={() => {
+              const buffetSection = document.getElementById("buffet");
+              if (buffetSection) {
+                buffetSection.scrollIntoView({ behavior: "smooth" });
+              } 
+            }}
+           className="hover:text-restaurant-gold transition-colors">
+            Buffé
+           </button>
+          <button 
+            onClick={() => {
+              const buffetSection = document.getElementById("contact");
+              if (buffetSection) {
+                buffetSection.scrollIntoView({ behavior: "smooth" });
+              } 
+            }}
+           className="hover:text-restaurant-gold transition-colors">
+            Kontakt
+          </button>
           <a 
             href="tel:08-7770754" 
             className="bg-restaurant-red hover:bg-restaurant-red/80 px-4 py-2 rounded-md transition-colors"
@@ -51,9 +68,26 @@ const Header: React.FC = () => {
         <nav className="md:hidden absolute top-full left-0 w-full bg-restaurant-black py-4 px-6 flex flex-col space-y-4 animate-fade-in">
           <Link to="/" className="py-2 hover:text-restaurant-gold transition-colors">Hem</Link>
           <Link to="/menu" className="py-2 hover:text-restaurant-gold transition-colors">Meny</Link>
-          <Link to="/buffe" className="py-2 hover:text-restaurant-gold transition-colors">Buffé</Link>
-          <Link to="/om-oss" className="py-2 hover:text-restaurant-gold transition-colors">Om Oss</Link>
-          <Link to="/kontakt" className="py-2 hover:text-restaurant-gold transition-colors">Kontakt</Link>
+          <button 
+            onClick={() => {
+              const buffetSection = document.getElementById("buffet");
+              if (buffetSection) {
+                buffetSection.scrollIntoView({ behavior: "smooth" });
+              } 
+            }}
+            className="py-2 hover:text-restaurant-gold transition-colors text-left">
+            Buffé
+           </button>
+          <button 
+            onClick={() => {
+              const buffetSection = document.getElementById("contact");
+              if (buffetSection) {
+                buffetSection.scrollIntoView({ behavior: "smooth" });
+              } 
+            }}
+            className="py-2 hover:text-restaurant-gold transition-colors text-left">
+              Kontakt
+           </button>
           <a 
             href="tel:08-7770754" 
             className="bg-restaurant-red hover:bg-restaurant-red/80 px-4 py-2 rounded-md transition-colors inline-block text-center"

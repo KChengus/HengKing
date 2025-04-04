@@ -12,11 +12,11 @@ const Footer: React.FC = () => {
             <h3 className="font-serif text-xl font-bold text-restaurant-gold mb-4">Restaurang Heng King</h3>
             <p className="mb-4 opacity-90">Traditionell asiatisk restaurang med populär buffé och à la carte. Vi erbjuder smaker du älskar i en avslappnad och välkomnande miljö.</p>
             <div className="flex space-x-3">
-              <a href="https://instagram.com" className="text-restaurant-gold hover:text-restaurant-red transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
+              <a href="https://www.facebook.com/groups/909141447487984/" className="text-restaurant-gold hover:text-restaurant-red transition-colors" aria-label="Facebook">
+                <img src="/Icons/facebook.png" alt="facebook" className="w-[30px] h-[30px]"></img>
               </a>
-              <a href="https://facebook.com" className="text-restaurant-gold hover:text-restaurant-red transition-colors" aria-label="Facebook">
-                <Facebook size={20} />
+              <a href="https://www.foodora.se/en/restaurant/io0o/restaurang-heng-king" className="text-restaurant-gold hover:text-restaurant-red transition-colors" aria-label="Foodora">
+                <img src="/Icons/foodora.png" alt="Foodora" className="w-[30px] h-[30px]"></img>
               </a>
             </div>
           </div>

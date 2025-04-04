@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: "url('public/lovable-uploads/67d40039-46eb-4ec9-b124-51223fe41681.png')",
+          backgroundImage: "url('/Restaurant/outside.jpg')",
           filter: "brightness(0.4)"
         }}
       />
@@ -27,13 +27,23 @@ const Hero: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <button 
-              onClick={() => navigate("/buffe")}
+              onClick={() => {
+                const buffetSection = document.getElementById("buffet");
+                if (buffetSection) {
+                  buffetSection.scrollIntoView({ behavior: "smooth" });
+                } 
+              }}
               className="bg-restaurant-red hover:bg-restaurant-red/90 text-white px-6 py-3 rounded-md transition-colors text-lg"
             >
               Utforska vår buffé
             </button>
             <button 
-              onClick={() => navigate("/kontakt")}
+              onClick={() => {
+                const buffetSection = document.getElementById("contact");
+                if (buffetSection) {
+                  buffetSection.scrollIntoView({ behavior: "smooth" });
+                } 
+              }}
               className="bg-transparent hover:bg-restaurant-gold/10 text-white border-2 border-restaurant-gold px-6 py-3 rounded-md transition-colors text-lg"
             >
               Kontakta oss

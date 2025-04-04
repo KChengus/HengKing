@@ -4,15 +4,15 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="bg-black py-16">
+    <section id="contact" className="bg-black py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="section-title mb-8">Kontakta Oss</h2>
+            <h2 className="section-title mb-10 ">Kontakta Oss</h2>
             
             <div className="mb-8">
               <div className="flex items-start mb-4">
-                <MapPin size={24} className="text-restaurant-red mr-4 mt-1" />
+                <MapPin size={24} className="text-restaurant-red mr-4 mt-5" />
                 <div>
                   <h3 className="text-restaurant-gold font-bold text-lg mb-1">Adress</h3>
                   <p className="text-white">Poseidons Torg 4, 136 46 Handen</p>

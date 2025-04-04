@@ -3,14 +3,18 @@ import React from 'react';
 
 const BuffetGallery: React.FC = () => {
   const buffetImages = [
-    "public/lovable-uploads/37b03452-72dc-46fc-a031-7710c1b7bf1b.png",
-    "public/lovable-uploads/55cc527d-6ad2-4447-8352-6f3bd2f16e9d.png",
-    "public/lovable-uploads/67d40039-46eb-4ec9-b124-51223fe41681.png",
-    "public/lovable-uploads/b308f77d-5450-45d7-8e77-22abdd8e5157.png",
+    "/Buffee/buffee-cafe.jpg",
+    "/Buffee/buffee1.jpg",
+    "/Buffee/buffee2.jpg",
+    "/Buffee/buffee3.jpg",
+    "/Buffee/buffee4.jpg",
+    "/Buffee/buffee5.jpg",
+    "/Buffee/buffee6.jpg",
+    "/Buffee/buffee7.jpg",
   ];
 
   return (
-    <section className="bg-black py-16">
+    <section id="buffet" className="bg-black py-16">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="section-title text-center mx-auto mb-12">Vår Buffé</h2>
         

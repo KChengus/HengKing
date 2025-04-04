@@ -22,8 +22,8 @@ const Index = () => {
         </div>
       </div>
       <BuffetTimes />
-      <MenuSlider />
       <BuffetGallery />
+      <MenuSlider />
       <Testimonials />
       <ContactSection />
       <Footer />

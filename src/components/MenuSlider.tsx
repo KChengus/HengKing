@@ -10,23 +10,16 @@ import {
 
 const MenuSlider: React.FC = () => {
   const galleryImages = [
-    "public/lovable-uploads/fd4f3abc-455b-4b4d-8389-1f3f848a948d.png",
-    "public/lovable-uploads/37b03452-72dc-46fc-a031-7710c1b7bf1b.png",
-    "public/lovable-uploads/55cc527d-6ad2-4447-8352-6f3bd2f16e9d.png",
-    "public/lovable-uploads/67d40039-46eb-4ec9-b124-51223fe41681.png",
-    "public/lovable-uploads/b308f77d-5450-45d7-8e77-22abdd8e5157.png",
+    "/Restaurant/sit1.jpg",
+    "/Restaurant/sit2.jpg",
+    "/Restaurant/rest_bar.jpg",
+    "/Restaurant/outside.jpg",
   ];
 
   return (
     <section className="py-16 bg-black">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="section-title text-center mx-auto mb-10">Vår Populära Buffé</h2>
-        
-        <p className="text-white text-center max-w-2xl mx-auto mb-12">
-          Upptäck vårt breda utbud av färska och läckra rätter från vår buffé. 
-          Här kan du välja bland många traditionella och moderna asiatiska specialiteter.
-        </p>
-        
+        <h2 className="section-title text-center mx-auto mb-10">Galleri</h2>
         <div className="relative max-w-5xl mx-auto">
           <Carousel
             opts={{
@@ -48,11 +41,10 @@ const MenuSlider: React.FC = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                         <div className="p-4">
                           <div className="font-serif text-xl text-restaurant-gold font-medium">
-                            {index === 0 && "Traditionella Rätter"}
-                            {index === 1 && "Sushi & Sashimi"}
-                            {index === 2 && "Färska Ingredienser"}
-                            {index === 3 && "Wok & Grillrätter"}
-                            {index === 4 && "Desserter & Efterrätter"}
+                            {index === 0 && "Sitplats"}
+                            {index === 1 && "Sitplats"}
+                            {index === 2 && "Restaurang Bar"}
+                            {index === 3 && "Ingång"}
                           </div>
                         </div>
                       </div>
@@ -66,11 +58,6 @@ const MenuSlider: React.FC = () => {
           </Carousel>
         </div>
         
-        <div className="flex justify-center mt-8">
-          <div className="bg-restaurant-red/90 text-white rounded-md py-3 px-6 inline-flex items-center gap-2 hover:bg-restaurant-red transition-colors">
-            <span className="font-medium">Besök oss för en unik kulinarisk upplevelse</span>
-          </div>
-        </div>
       </div>
     </section>
   );
